@@ -161,3 +161,12 @@ body {
   padding: 10px 30px;
   border-radius: 6px;
 }
+
+/* Style for skill icons under each skill */
+/* This makes the icon bigger and centers it */
+.skill-icon {
+  display: block;         /* Show the icon on its own line */
+  margin: 0 auto 8px;     /* Center the icon and add space below */
+  width: 48px;            /* Make the icon bigger */
+  height: 48px;
+}
