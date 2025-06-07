@@ -16,7 +16,8 @@
       <a href="#about-section" class="cta-button">About</a>
       <!-- Link to the Skills section using an anchor -->
       <a href="#skills-section" class="cta-button">Skills</a>
-      <a href="#">Projects</a>
+      <!-- Link to the Projects section as a CTA button -->
+      <a href="#projects-section" class="cta-button">Projects</a>
       <a href="#">Contact</a>
     </nav>
   </header>
@@ -49,20 +50,145 @@
   <div class="skills-section" id="skills-section">
     <!-- Section header -->
     <h2>My skills</h2>
+    <!-- Short description below the header -->
+    <p class="skills-desc">
+      These are the languages I've been learning!
+    </p>
     <!-- List of skills -->
     <div class="skills-list">
       <!-- Java Script skill with icon above the text -->
       <div class="skill-item">
-        <!-- Icon for Java Script above the text -->
         <img src="img/java.png" alt="JavaScript icon" class="skill-icon">
         <br>
         Java Script
       </div>
-      <div class="skill-item">C++</div>
-      <div class="skill-item">CSS</div>
-      <div class="skill-item">HTML</div>
+      <!-- C++ skill with icon above the text -->
+      <div class="skill-item">
+        <img src="img/c-.png" alt="C++ icon" class="skill-icon">
+        <br>
+        C++
+      </div>
+      <!-- CSS skill with icon above the text -->
+      <div class="skill-item">
+        <img src="img/css.png" alt="CSS icon" class="skill-icon">
+        <br>
+        CSS
+      </div>
+      <!-- HTML skill with icon above the text -->
+      <div class="skill-item">
+        <!-- Icon for HTML above the text -->
+        <img src="img/html.png" alt="HTML icon" class="skill-icon">
+        <br>
+        HTML
+      </div>
     </div>
   </div>
   <!-- My Skills section ends here -->
+
+  <!-- Projects section starts here -->
+  <div class="projects-section" id="projects-section">
+    <!-- Section header -->
+    <h2>Projects</h2>
+    <!-- Short description for beginners -->
+    <p class="projects-desc">
+      Here are some of the projects I've worked on.
+    </p>
+    <!-- Project squares lined up horizontally -->
+    <div class="projects-cards">
+      <!-- First project card with content -->
+      <div class="project-card">
+        <!-- Project title -->
+        <div class="project-title">Personalised Card</div>
+        <!-- Project description -->
+        <div class="project-desc">This is my personalized card!</div>
+        <!-- Project links: now clickable -->
+        <div class="project-links">
+          <a href="https://emaantovska.github.io/01-profile-card-html/" target="_blank" style="color: #87ceeb; text-decoration: none;">Github | demo</a>
+        </div>
+      </div>
+      <!-- Second project card with content -->
+      <div class="project-card">
+        <!-- Project title -->
+        <div class="project-title">Pet Fostering</div>
+        <!-- Project description -->
+        <div class="project-desc">Adopt at pet shelters!</div>
+        <!-- Project links: now clickable -->
+        <div class="project-links">
+          <a href="https://emaantovska.github.io/01-pet-fostering-cta/" target="_blank" style="color: #87ceeb; text-decoration: none;">Github | demo</a>
+        </div>
+      </div>
+      <!-- Third project card (empty for now) -->
+      <div class="project-card"></div>
+    </div>
+  </div>
+  <!-- Projects section ends here -->
+
+  <style>
+    /* Make the header stick to the top of the page when scrolling */
+    .main-header {
+      background-color: #2264a5; /* Dark blue background */
+      padding: 15px 0;           /* Space above and below the nav */
+      text-align: center;        /* Center the nav links */
+      position: sticky;          /* Make the header stick to the top */
+      top: 0;                    /* Stick to the very top */
+      z-index: 1000;             /* Make sure it stays above other content */
+    }
+
+    /* About section styles */
+    .about-section {
+      margin: 40px auto;
+      max-width: 700px;
+      /* Add a translucent hero.jpg background just like the hero section */
+      background-image:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url('img/hero.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+
+    /* Skills section styles */
+    .skills-section {
+      margin: 40px auto;
+      max-width: 700px;
+      /* Add a translucent hero.jpg background just like the hero section */
+      background-image:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url('img/hero.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+
+    /* Projects section styles */
+    .projects-section {
+      margin: 40px auto;
+      max-width: 700px;
+      /* Add a translucent hero.jpg background just like the hero section */
+      background-image:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.65)),
+        url('img/hero.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+
+    /* Remove the top margin from the hero section so it touches the header */
+    .hero {
+      margin: 0 0 30px 0; /* No space at the top, 30px at the bottom */
+    }
+  </style>
 </body>
 </html>

@@ -81,7 +81,7 @@ body {
 
 /* Style for the Home and About navigation buttons to look like CTAs */
 .main-header nav .cta-button {
-  background-color: #336699; /* Slightly lighter blue */
+  background-color: #0f3862; /* Slightly lighter blue */
   color: #fff;               /* White text */
   padding: 8px 18px;         /* Add some padding */
   border-radius: 5px;        /* Rounded corners */
@@ -166,7 +166,103 @@ body {
 /* This makes the icon bigger and centers it */
 .skill-icon {
   display: block;         /* Show the icon on its own line */
-  margin: 0 auto 8px;     /* Center the icon and add space below */
-  width: 48px;            /* Make the icon bigger */
-  height: 48px;
+  margin: 0 auto 0;       /* No extra space below the icon */
+  width: 64px;            /* Make the icon bigger for beginners */
+  height: 64px;
+}
+
+/* Add this to your CSS file for the skills description text */
+/* This centers the text and gives it a little space below */
+.skills-desc {
+  text-align: center;      /* Center the text */
+  color: #336699;          /* Slightly lighter blue */
+  font-size: 1.1em;        /* Slightly bigger text */
+  margin-bottom: 18px;     /* Space below the description */
+  margin-top: 0;           /* Remove extra space above */
+}
+
+/* Projects section styles */
+.projects-section {
+  margin: 40px auto; /* Space above and below */
+  max-width: 700px;  /* Limit width */
+  background: rgba(255,255,255,0.85); /* Light background */
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow */
+  text-align: center; /* Center all content */
+}
+
+/* Style for the Projects header */
+.projects-section h2 {
+  color: #003366;        /* Dark blue */
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.5em;      /* Same size as other section headers */
+}
+
+/* Style for the Projects description */
+.projects-desc {
+  color: #336699;        /* Slightly lighter blue */
+  font-size: 1.1em;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+
+/* Style for the Projects list */
+.projects-list {
+  list-style-type: disc; /* Bullet points */
+  padding-left: 0;
+  margin: 0 auto;
+  display: inline-block; /* Center the list */
+  text-align: left;      /* Align text to the left inside the list */
+  color: #336699;
+  font-size: 1.1em;
+}
+
+/* Projects cards container */
+.projects-cards {
+  display: flex;                /* Place cards in a row */
+  justify-content: center;      /* Center the cards horizontally */
+  gap: 20px;                    /* Space between cards */
+  margin-bottom: 24px;          /* Space below the cards */
+}
+
+/* Individual project card */
+.project-card {
+  width: 150px;                 /* Set width of the square */
+  height: 120px;                /* Set height of the square */
+  background-color: #3f75aa;    /* Darker blue than the Projects block */
+  border-radius: 8px;           /* Slightly rounded corners */
+
+  /* Make sure text is centered and spaced for beginners */
+  display: flex;               /* Use flex to stack content vertically */
+  flex-direction: column;      /* Stack children from top to bottom */
+  align-items: center;         /* Center content horizontally */
+  justify-content: center;     /* Center content vertically */
+  padding: 10px;               /* Add some padding inside the card */
+  box-sizing: border-box;      /* Include padding in width/height */
+}
+
+/* Style for the project title */
+.project-title {
+  color: #fff;                 /* White text */
+  font-weight: bold;           /* Bold for the title */
+  margin-bottom: 6px;          /* Space below the title */
+  font-size: 1em;              /* Normal size for beginners */
+  text-align: center;
+}
+
+/* Style for the project description */
+.project-desc {
+  color: #e0eaff;              /* Lighter blue text */
+  font-size: 0.95em;           /* Slightly smaller */
+  margin-bottom: 8px;          /* Space below the description */
+  text-align: center;
+}
+
+/* Style for the project links */
+.project-links {
+  color: #87ceeb;              /* Light blue for links */
+  font-size: 0.95em;
+  text-align: center;
 }
