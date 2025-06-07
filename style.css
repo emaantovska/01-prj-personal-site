@@ -266,3 +266,65 @@ body {
   font-size: 0.95em;
   text-align: center;
 }
+
+/* Contact section styles */
+.contact-section {
+  margin: 40px auto; /* Space above and below */
+  max-width: 700px;  /* Limit width */
+  /* Add a translucent hero.jpg background just like the other sections */
+  background-image:
+    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url('img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+/* Style for the Contact Me header */
+.contact-section h2 {
+  color: #003366;        /* Dark blue */
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.5em;      /* Same size as other section headers */
+}
+
+/* Style for the Contact Me text */
+.contact-desc {
+  color: #336699;        /* Slightly lighter blue */
+  font-size: 1.1em;
+  margin: 0;
+}
+
+/* Style for the contact icons container */
+.contact-icons {
+  margin-top: 18px;           /* Space above the icons */
+  text-align: center;         /* Center the icons */
+}
+
+/* Style for each social icon */
+.social-icon {
+  width: 60px;                /* Make the icon bigger */
+  height: 60px;               /* Make the icon bigger */
+  margin: 0 10px;             /* Space between icons */
+  vertical-align: middle;     /* Align icons in the middle */
+}
+
+/* Add this to your <style> section or style.css */
+
+/* Style for the footer */
+.main-footer {
+  background-color: #2264a5; /* Same color as the header */
+  color: #fff;               /* White text */
+  text-align: center;        /* Center the text */
+  padding: 15px 0;           /* Space above and below the text */
+  margin-top: 40px;          /* Space above the footer */
+}
+
+/* Remove default margin from the footer paragraph */
+.main-footer p {
+  margin: 0;
+}
