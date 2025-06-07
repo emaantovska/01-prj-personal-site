@@ -1,1 +1,163 @@
-/* Add you CSS here */
+/* Set the background image for the whole page */
+body {
+  /* Set the background image to clouds.jpg from the img folder */
+  background-image: url('img/clouds.jpg');
+  background-size: cover; /* Make the image cover the whole page */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style for the hero section */
+.hero {
+  /* Center everything inside the hero section */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+  background-color: rgba(240, 248, 255, 0.85); /* Make the background a bit more see-through */
+  padding: 40px;
+  border-radius: 10px;
+  margin: 30px 0;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* Soft shadow */
+
+  /* Add a translucent background image over the hero section */
+  background-image: 
+    linear-gradient(rgba(240,248,255,0.85), rgba(240,248,255,0.65)), /* Lighter overlay so the image is more visible */
+    url('img/hero.jpg'); /* The hero image */
+  background-size: cover;      /* Make the image cover the hero section */
+  background-repeat: no-repeat;/* Do not repeat the image */
+  background-position: center; /* Center the image */
+}
+
+/* Style for the photo */
+.hero-photo {
+  width: 220px; /* Make the photo bigger */
+  height: 220px;
+  object-fit: cover; /* Crop photo to fit */
+  border-radius: 50%; /* Make photo round */
+  border: 4px solid #87ceeb; /* Add a border */
+  margin-bottom: 20px; /* Space below the photo */
+}
+
+/* Style for the name */
+.hero h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #003366; /* Dark blue */
+  text-align: center;
+}
+
+/* Style for the introduction text */
+.hero p {
+  margin-top: 15px;
+  color: #336699; /* Slightly lighter blue than h1 */
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Header and navigation styles */
+.main-header {
+  background-color: #002244; /* Dark blue background */
+  padding: 15px 0;           /* Space above and below the nav */
+  text-align: center;        /* Center the nav links */
+}
+
+/* Style for navigation links */
+.main-header nav a {
+  color: #fff;               /* White text for links */
+  text-decoration: none;     /* Remove underline */
+  margin: 0 18px;            /* Space between links */
+  font-size: 1.1em;          /* Slightly bigger text */
+  font-weight: bold;         /* Bold text */
+  transition: color 0.2s;    /* Smooth color change on hover */
+}
+
+/* Change link color when hovered */
+.main-header nav a:hover {
+  color: #87ceeb;            /* Light blue on hover */
+}
+
+/* Style for the Home and About navigation buttons to look like CTAs */
+.main-header nav .cta-button {
+  background-color: #336699; /* Slightly lighter blue */
+  color: #fff;               /* White text */
+  padding: 8px 18px;         /* Add some padding */
+  border-radius: 5px;        /* Rounded corners */
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Change CTA button color on hover */
+.main-header nav .cta-button:hover {
+  background-color: #87ceeb; /* Light blue on hover */
+  color: #002244;            /* Dark blue text on hover */
+}
+
+/* About section styles */
+.about-section {
+  /* Add some space above and below */
+  margin: 40px auto;
+  max-width: 700px; /* Limit width for better readability */
+  background: rgba(255,255,255,0.85); /* Light background for contrast */
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow */
+  text-align: center; /* Center all content */
+}
+
+/* Style for the About Me header */
+.about-section h2 {
+  color: #003366; /* Dark blue */
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 2em;
+}
+
+/* Style for the About Me text */
+.about-section p {
+  color: #336699; /* Slightly lighter blue */
+  font-size: 1.15em;
+  margin: 0;
+}
+
+/* Skills section styles */
+.skills-section {
+  margin: 40px auto; /* Space above and below */
+  max-width: 700px;  /* Limit width */
+  background: rgba(255,255,255,0.85); /* Light background */
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow */
+  text-align: center; /* Center all content */
+}
+
+/* Style for the Skills header */
+.skills-section h2 {
+  color: #003366; /* Dark blue */
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 2em;
+}
+
+/* Style for the list of skills */
+.skills-list {
+  /* Use flex to place skills in a row */
+  display: flex;
+  flex-direction: row;      /* Place items in a horizontal line */
+  justify-content: center;  /* Center the skills horizontally */
+  gap: 18px;                /* Space between each skill */
+  margin-top: 20px;
+}
+
+/* Style for each skill item */
+.skill-item {
+  color: #336699;           /* Slightly lighter blue */
+  font-size: 1.2em;
+  background: #eaf3fb;      /* Very light blue background */
+  padding: 10px 30px;
+  border-radius: 6px;
+}
